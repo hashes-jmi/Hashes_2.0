@@ -1,0 +1,7 @@
+markdown: kramdown
+baseurl: ""
+exclude: ['README.md, JEKYLL.md']
+permalink: pretty
+sass:
+    sass_dir: assets/_sass
+    style: compressed
