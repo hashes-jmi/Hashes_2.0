@@ -6,6 +6,6 @@ timezone: Kolkata/Asia
 sass:
     sass_dir: assets/css
     style: compressed
-plugins:
-    - jekyll-minifier
-    - jekyll-last-modified-at
+# plugins:
+#     - jekyll-minifier
+#     - jekyll-last-modified-at
