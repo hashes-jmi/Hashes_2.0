@@ -1,7 +1,9 @@
 markdown: kramdown
 baseurl: ""
 exclude: ['README.md, JEKYLL.md']
-permalink: pretty
+permalink: :category/:author/:title
 sass:
-    sass_dir: assets/_sass
+    sass_dir: assets/css
     style: compressed
+plugins:
+    - jekyll-minifier
