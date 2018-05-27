@@ -1,31 +1,35 @@
 # Hashes_2.O
 
-## To run
-- `git clone https://github.com/Faisal-Manzer/Hashes_2.0.git`
-- `cd Hashes_2.0`
-- `jekyll serve --watch`
+## How to publish Blogs
+- make a directory in `blog` folder of your name (say: `john-doe`)
+- add `index.md`
+- add a blog (say: `blog-something.md`)
 
-To install jekyll see this [link](https://jekyllrb.com/docs/installation/)  
-To learn jekyll see this [link](https://jekyllrb.com/)
+##options: blog.md
+```
+layout: blog #not to be changed
+title: Tile of the Blog
+description: A long description 250-270 recommended
 
-## Options
-### layout: default
+author: Your Name #case sensitive.
 
-#### SEO based
-`title`: page title  
-`description`: page description
+# optinal
+twitter: your_twitter_username
+instagram:
+facebook:
+github:
+linkedin:
+website: #you website url if any
+```
 
-#### style Based
-`css`:  
-an array of the css file to include,  
-css must be in `assets/css`
+### Options: index.md
+```
+\---
+layout: blog-index #not to be changed
+title: Blogs by John doe
 
-`scss`:  
-an array of the scss file to include,  
-css must be in `assets/scss`
-
-
-#### script based
-`js`:  
-an array of the js file to include,  
-css must be in `assets/js`
+author: John Doe #case-sensitive
+nopublish: true
+\---
+```
+`index.md` will not contain any content. All four options are compulsory.

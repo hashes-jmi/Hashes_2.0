@@ -1,6 +1,5 @@
 ---
 layout: default
-css: [main]
 
 title: Projects | Hashes_JMI
 ---

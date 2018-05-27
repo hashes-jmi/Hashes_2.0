@@ -1,0 +1,25 @@
+---
+layout: default
+
+title: Blogs
+---
+<section id="projects">
+        <div class="user-details">
+  <h1>Recent Blogs</h1>
+</div>
+{% assign blogs=(site.pages | where: "layout", "blog" | sort: 'date') %}
+{% for blog in blogs limit:20 %}
+  {% unless page.nopublish %}
+    <div class="user-projects">
+      <div class="contents-left" style="width: 100%;">
+        <h3 style="margin: 0"><a href="{{blog.url}}" style="text-decoration: none;color: inherit;">{{blog.title}}</a></h3>
+        by: {{blog.author}}<br />
+        on: {{blog.category}}
+        <p>
+          {{blog.description}}
+        </p>
+      </div>
+    </div>
+  {% endunless %}
+{% endfor %}
+</section>

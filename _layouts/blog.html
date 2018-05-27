@@ -1,0 +1,40 @@
+---
+layout: default
+---
+<section id="projects" style="overflow: scroll">
+  <div class="user-projects">
+    <div class="contents-{{positionc}}">
+      <h1 style="margin: 0;">{{page.title}}</h1>
+      {% if page.author %}
+        <h3 style="margin: 0;color: #555555;">Author: <strong>{{page.author}}</strong></h3>
+      {% endif %}
+      {% if page.edit-date %}
+        <h3 style="margin: 0; padding: 0; color: #555555">Last Modified: <strong>{{page.edit-date}}</strong></h3>
+      {% endif %}
+      <div class="soical-icon-bar">
+      {% if page.github %}
+        <a href="https://github.com/{{page.github}}" target="_blank"><i class="fab fa-github fa-2x"></i></a>
+      {% endif %}
+      {% if page.linkedin %}
+        <a href="https://linkedin.com/in/{{page.linkedin}}" target="_blank"><i class="fab fa-linkedin fa-2x"></i></a>
+      {% endif %}
+      {% if page.twitter %}
+        <a href="https://twitter.com/{{page.twitter}}" target="_blank"><i class="fab fa-twitter fa-2x"></i></a>
+      {% endif %}
+      {% if page.instagram %}
+        <a href="https://instagram.com/{{page.instagram}}" target="_blank"><i class="fab fa-instagram fa-2x"></i></a>
+      {% endif %}
+      {% if page.facebook %}
+        <a href="https://facebook.com/{{page.facebook}}" target="_blank"><i class="fab fa-facebook fa-2x"></i></a>
+      {% endif %}
+      {% if page.website %}
+        <a href="{{page.website}}" target="_blank"><i class="fas fa-link fa-2x"></i></a>
+      {% endif %}
+      </div>
+      <hr />
+      <p>
+        {{content | markdownify}}
+      </p>
+    </div>
+  </div>
+</section>

@@ -1,3 +1,15 @@
+---
+layout: blog
+
+date: 2018-05-28
+title: Comparing web
+category: WEB Development
+description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum"
+
+author: Faisal Manzer
+twitter: faisal_manzer
+facebook: i.am.faisal.manzer
+---
 # Hashes_2.0
 The new cooler website of HashesJMI. open sourced.
 
@@ -37,42 +49,6 @@ https://www.atlassian.com/blog/git/written-unwritten-guide-pull-requests
 ## Deployment
 
 https://oreanroy.github.io/Hashes_2.0/
-
-## How to publish Blogs
-- make a directory in `blog` folder of your name (say: `john-doe`)
-- add `index.md`
-- add a blog (say: `blog-something.md`)
-
-##options: blog.md
-After adding the options you can write your blog in markdown format.
-```
-layout: blog #not to be changed
-title: Tile of the Blog
-category: WEB Development #or your category
-description: A long description 250-270 recommended
-
-author: Your Name #case sensitive.
-
-# optinal
-twitter: your_twitter_username
-instagram:
-facebook:
-github:
-linkedin:
-website: #you website url if any
-```
-
-### Options: index.md
-```
-\---
-layout: blog-index #not to be changed
-title: Blogs by John doe
-
-author: John Doe #case-sensitive
-nopublish: true
-\---
-```
-`index.md` will not contain any content. All four options are compulsory.
 
 # Work Flow
 TO be added
