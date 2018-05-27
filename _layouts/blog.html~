@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+  {% include head.html %}
+  <body>
+      <section>
+        {% include navbar_blog.html %}
+      </section>
+     <section>
+        {% include blog_content.html %}
+     </section>
+      
+        <!--{{ content }}-->
+      {% include footer.html %}
+  </body>
