@@ -5,9 +5,49 @@ The HashesJMI website will come in a new avatar you all are encouraged to contri
 Fork this repo run on your local machine.
 Keep an eye on open issues, report bugs and contribute!
 
+# Jekyll
+Jekyll is a simple, blog-aware, static site generator.
+
+You create your content as text files (Markdown), and organize them into folders. Then, you build the shell of your site using Liquid-enhanced HTML templates. Jekyll automatically stitches the content and templates together, generating a website made entirely of static assets, suitable for uploading to any server.
+
+Jekyll happens to be the engine behind GitHub Pages, so you can host your project’s Jekyll page/blog/website on GitHub’s servers for free.
+
 ## Read contributing.md to learn how to contribute
 To learn about pull requests and squashing commits read this.
 https://www.atlassian.com/blog/git/written-unwritten-guide-pull-requests
+
+# prerequisites
+---------------------------------------------------
+
+## Install Ruby
+ sudo apt-get install ruby ruby-dev build-essensital
+## Install Jekyll 
+ gem install jekyll bundler
+ 
+ before starting update jekyll.
+ bundle update jekyll
+## Running on your local Machine
+ Colne The Repo
+ 
+ Cd into the Repo
+ 
+ run bundle exec jekyll serve
+ 
+ visit localhost:4000
+ 
+ -----------------------------------------------------
+ 
+# Work Flow
+TO be added
+--------------------------------------------------------
+
+# color scheme
+- ![#ffffff](https://placehold.it/15/f03c15/000000?text=+) `#ffffff`
+- ![#7f0000](https://placehold.it/15/c5f015/000000?text=+) `#7f0000`
+- ![#1a222c](https://placehold.it/15/1589F0/000000?text=+) `#1a222c`
+- ![#555555](https://placehold.it/15/1589F0/000000?text=+) `#555555`
+
+-----------------------------------------------------------
 
 ## To learm more about Git
 1. https://www.atlassian.com/git
