@@ -23,6 +23,9 @@ https://www.atlassian.com/blog/git/written-unwritten-guide-pull-requests
  `sudo apt-get install ruby ruby-dev build-essensital` for linux.
 ## Install Jekyll
  `gem install jekyll bundler`
+ 
+ before starting update jekyll.
+ `bundle update jekyll`
 ## Running on your local Machine
  Colne The Repo
 
