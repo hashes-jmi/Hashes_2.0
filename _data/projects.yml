@@ -1,0 +1,11 @@
+- title: Hack_JMI
+  lang: Andoid, Web, Blochain, ML
+  description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+  link: https://github.com/hashes-jmi/hack-jmi
+  image: hackJMI.jpg
+
+- title: JMI_Robotics
+  lang: PHP, Javascript
+  description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+  link: http://jmirobotics.co.in
+  image: jmirobotics.jpg

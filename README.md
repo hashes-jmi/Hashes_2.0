@@ -20,27 +20,27 @@ https://www.atlassian.com/blog/git/written-unwritten-guide-pull-requests
 ---------------------------------------------------
 
 ## Install Ruby
- sudo apt-get install ruby ruby-dev build-essensital
-## Install Jekyll 
- gem install jekyll bundler
+ `sudo apt-get install ruby ruby-dev build-essensital` for linux.
+## Install Jekyll
+ `gem install jekyll bundler`
  
  before starting update jekyll.
- bundle update jekyll
+ `bundle update jekyll`
 ## Running on your local Machine
  Colne The Repo
- 
+
  Cd into the Repo
- 
- run bundle exec jekyll serve
- 
+
+ run `bundle exec jekyll serve`
+
  visit localhost:4000
- 
+
  -----------------------------------------------------
- 
+
 ## Deployment
 
 https://oreanroy.github.io/Hashes_2.0/
- 
+
 # Work Flow
 TO be added
 --------------------------------------------------------
@@ -80,8 +80,3 @@ How read this https://stackoverflow.com/questions/7244321/how-do-i-update-a-gith
 7. http://www.pixijs.com/tutorials
 8. https://jsfiddle.net/
 9. https://codepen.io/
-
-
-
-
-

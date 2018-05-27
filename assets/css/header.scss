@@ -1,0 +1,47 @@
+/*! copyright Faisal Manzer faisal-manzer.in*/
+
+header {
+  width: 100%;
+  padding: 10px;
+  background-color: #1a222c;
+  box-sizing: border-box;
+}
+header a{
+  text-decoration: none;
+  color: #ffffff;
+}
+header .brand-logo {
+  padding: 10px;
+  text-align: center;
+}
+
+header .brand-logo h1 {
+  line-height: normal;
+  margin: 0;
+  display: inline-block;
+  width: auto;
+  padding-top: 0;
+}
+@media only screen and (min-width:992px) {
+  header {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between
+  }
+  header li {
+    padding: 10px;
+    display: inline-block;
+  }
+  header li:hover {
+    transform: scale(1.2);
+    transition: all .2s ease-in-out
+  }
+
+}
+@media only screen and (max-width:992px) {
+  header ul{
+    display: none;
+  }
+
+}
