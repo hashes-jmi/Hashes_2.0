@@ -37,6 +37,10 @@ https://www.atlassian.com/blog/git/written-unwritten-guide-pull-requests
  
  -----------------------------------------------------
  
+## Deployment
+
+https://oreanroy.github.io/Hashes_2.0/
+ 
 # Work Flow
 TO be added
 --------------------------------------------------------
