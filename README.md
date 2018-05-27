@@ -42,10 +42,10 @@ TO be added
 --------------------------------------------------------
 
 # color scheme
-- ![#ffffff](https://placehold.it/15/f03c15/000000?text=+) `#ffffff`
-- ![#7f0000](https://placehold.it/15/c5f015/000000?text=+) `#7f0000`
-- ![#1a222c](https://placehold.it/15/1589F0/000000?text=+) `#1a222c`
-- ![#555555](https://placehold.it/15/1589F0/000000?text=+) `#555555`
+- ![#ffffff](https://placehold.it/15/ffffff/000000?text=+) `#ffffff`
+- ![#7f0000](https://placehold.it/15/7f0000/000000?text=+) `#7f0000`
+- ![#1a222c](https://placehold.it/15/1a222c/000000?text=+) `#1a222c`
+- ![#555555](https://placehold.it/15/555555/000000?text=+) `#555555`
 
 -----------------------------------------------------------
 
