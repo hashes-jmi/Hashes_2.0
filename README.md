@@ -64,13 +64,13 @@ website: #you website url if any
 
 ### Options: index.md
 ```
-\---
+---
 layout: blog-index #not to be changed
 title: Blogs by John doe
 
 author: John Doe #case-sensitive
 nopublish: true
-\---
+---
 ```
 `index.md` will not contain any content. All four options are compulsory.
 
