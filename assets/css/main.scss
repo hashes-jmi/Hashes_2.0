@@ -287,7 +287,7 @@ sub, sup {
 .user-projects img {
   max-width: 100%;
   height: auto;
-  border-radius: 5px
+  border-radius: 5px;
 }
 
 .user-projects h5, body {
@@ -313,6 +313,13 @@ sub, sup {
   }
   .contents-right, .images-right {
     float: right;
+    width: 48%
+  }
+  .contents-left {
+    margin-top: -5%
+  }
+  .contents-left, .images-left {
+    float: left;
     width: 48%
   }
   .images-right img {
@@ -341,6 +348,12 @@ sub, sup {
   text-decoration: none;
   cursor: pointer;
   transition: color .3s ease-out, background-color .3s ease-out, border-color .3s ease-out
+}
+
+.soical-icon-bar a{
+  color: #1a222c;
+  padding: 5px 10px;
+  display: inline-block;
 }
 
 .project-link:active, .project-link:hover {

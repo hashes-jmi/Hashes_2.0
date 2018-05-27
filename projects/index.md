@@ -32,5 +32,4 @@ title: Projects | Hashes_JMI
     {% assign positionc="left" %}
   {% endif %}
 {% endfor %}
-
-      </section>
+</section>

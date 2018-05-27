@@ -1,7 +1,8 @@
 ---
-layout: default
-
-title: Blogs
+layout: person
 css: [main]
+
+title: Alumni | Hashes_JMI
+data: alumni
+header: Alumni
 ---
-<h1>Comming soon</h1>
