@@ -1,0 +1,16 @@
+- name: XYZ
+  position: ABC
+  image: fm.jpeg
+  github: oreanroy
+  linkedin: oreanroy
+  about: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum"
+
+- name: Faisal Manzer
+  position: Web Developer
+  image: fm.jpeg
+  github: faisal-manzer
+  linkedin: faisal-manzer
+  twitter: faisal_manzer
+  instagram: faisal_manzer
+  website: https://faisal-manzer.in
+  about: "I love technology, and of course programming stuff. I make small websites and generally interested in web technologies, and now moving ahead in app development. I am eager to learn more stuff."

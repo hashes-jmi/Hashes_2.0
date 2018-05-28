@@ -20,27 +20,60 @@ https://www.atlassian.com/blog/git/written-unwritten-guide-pull-requests
 ---------------------------------------------------
 
 ## Install Ruby
- sudo apt-get install ruby ruby-dev build-essensital
-## Install Jekyll 
- gem install jekyll bundler
- 
- before starting update jekyll.
- bundle update jekyll
+ `sudo apt-get install ruby ruby-dev build-essensital` for linux.
+## Install Jekyll
+ `gem install jekyll bundler`
 ## Running on your local Machine
  Colne The Repo
- 
+
  Cd into the Repo
- 
- run bundle exec jekyll serve
- 
+
+ run `bundle exec jekyll serve`
+
  visit localhost:4000
- 
+
  -----------------------------------------------------
- 
+
 ## Deployment
 
 https://oreanroy.github.io/Hashes_2.0/
- 
+
+## How to publish Blogs
+- make a directory in `blog` folder of your name (say: `john-doe`)
+- add `index.md`
+- add a blog (say: `blog-something.md`)
+
+##options: blog.md
+After adding the options you can write your blog in markdown format.
+```
+layout: blog #not to be changed
+title: Tile of the Blog
+category: WEB Development #or your category
+description: A long description 250-270 recommended
+
+author: Your Name #case sensitive.
+
+# optinal
+twitter: your_twitter_username
+instagram:
+facebook:
+github:
+linkedin:
+website: #you website url if any
+```
+
+### Options: index.md
+```
+---
+layout: blog-index #not to be changed
+title: Blogs by John doe
+
+author: John Doe #case-sensitive
+nopublish: true
+---
+```
+`index.md` will not contain any content. All four options are compulsory.
+
 # Work Flow
 TO be added
 --------------------------------------------------------
@@ -80,8 +113,3 @@ How read this https://stackoverflow.com/questions/7244321/how-do-i-update-a-gith
 7. http://www.pixijs.com/tutorials
 8. https://jsfiddle.net/
 9. https://codepen.io/
-
-
-
-
-
