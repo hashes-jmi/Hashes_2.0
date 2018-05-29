@@ -1,0 +1,159 @@
+/* nav */
+
+$nav-bg: #1a222c;
+$nav-text: #ffffff;
+$nav-hover-bg: #ffffff;
+$nav-hover-text: #1a222c;
+
+$navbtn-bg: #555555;
+$navbtn-rect: #ffffff;
+
+nav{
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-height: 100vh;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
+  background-color: $nav-bg;
+  z-index: 4;
+  width: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+
+  transform: translateX(-250px);
+  transition: 0.4s ease-in-out;
+}
+
+nav ul{
+  position: relative;
+  overflow-y: scroll;
+  padding-left: 0;
+  list-style-type: none;
+  width: 100%;
+}
+
+nav li{
+  list-style-type: none;
+  text-align: center;
+}
+
+nav a{
+  padding-left: 30px;
+  font-weight: 500;
+  padding-left: 0px;
+  height: 50px;
+  line-height: 50px;
+  width: 100%;
+  display: block;
+  color: $nav-text;
+  text-decoration: none;
+  font-size: 2rem;
+}
+
+nav a:hover{
+  background-color: $nav-hover-bg;
+  color: $nav-hover-text;
+}
+
+nav .icon{
+  margin: 0 32px 0 0;
+  width: 24px;
+  color: $nav-text;
+  font-size: 1.1em;
+}
+
+
+
+/* img-holder */
+
+.img-holder{
+  position: relative;
+}
+
+.img-holder>img{
+  width: 100%;
+  border-radius: 250px;
+}
+
+.img-holder>p{
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  color: white;
+  width: 100%;
+  margin: 0;
+  padding: 15px;
+  font-weight: 400;
+  font-size: 1.1em;
+}
+
+.img-holder .profile-img{
+  border-radius: 100%;
+  width: 65px;
+  height: auto;
+}
+
+/* mobile and desktop */
+@media screen and (max-width: 992px) {
+  nav{
+  }
+
+  nav.open{
+    transform: translateX(0);
+  }
+
+  /* sidenav overlay */
+
+  #sidenav-overlay{
+    z-index: 4;
+    position: fixed;
+    background-color: #1117;
+    top: 0;
+    left: 0;
+    transition: 0.4s;
+  }
+
+  .overlay-on{
+    width: 100vw;
+    height: 100vh;
+  }
+
+  // sidenav button
+
+  #sidenav-btn{
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    padding: 15px;
+    z-index: 5;
+    background-color: $navbtn-bg;
+    border-radius: 40px;
+    display: block;
+    cursor: pointer;
+  }
+
+  #sidenav-btn div{
+    width: 35px;
+    height: 5px;
+    background-color: $navbtn-rect;
+    margin: 5px 0;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: 0.4s ease-in-out;
+  }
+
+  .sidenav-btn-change .sidenav-btn-bar-1{
+    -webkit-transform: rotate(-45deg) translate(-8px, 8px);
+    transform: rotate(-45deg) translate(-8px, 8px);
+  }
+
+  .sidenav-btn-change .sidenav-btn-bar-2{
+    opacity: 0;
+  }
+
+  .sidenav-btn-change .sidenav-btn-bar-3{
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+  }
+}

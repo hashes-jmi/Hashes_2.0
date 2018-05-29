@@ -1,6 +1,6 @@
 ---
 ---
-@import "plugin/normalize.scss";
+@import "plugin/normalize";
 
 body {
   padding: 0;
@@ -101,7 +101,7 @@ sub, sup {
   height: 100vh !important
 }
 
-@import "header.scss";
+@import "plugin/header";
 
 .header {
   z-index: 1;
@@ -380,6 +380,8 @@ sub, sup {
   margin: 0;
   color: #fff
 }
+
+@import "plugin/sidenav";
 
 @import 'fa/css/fontawesome-all.css';
 @import 'plugin/montserrat';

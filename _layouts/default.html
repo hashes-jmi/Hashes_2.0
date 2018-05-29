@@ -30,18 +30,20 @@
         </h1>
       </div>
         <div class="hide-s hide-m">
-          <ul>
-            <li><a href="{{site.baseurl}}">Home</a></li>
-            <li><a href="{{site.baseurl}}/projects/">Projects</a></li>
-            <li><a href="{{site.baseurl}}/blog/">Blogs</a></li>
-            <li><a href="{{site.baseurl}}/joinus/">Join US</a></li>
-            <li><a href="{{site.baseurl}}/alumni/">Alumni</a></li>
-            <li><a href="{{site.baseurl}}/team/" class="external">Team</a></li>
-          </ul>
+          {% include nav-links.html %}
       </div>
       </header>
     {% endunless %}
     <!-- Content -->
+    <div id="sidenav-overlay"></div>
+    <div id="sidenav-btn" class="l0">
+      <div class="sidenav-btn-bar-1"></div>
+      <div class="sidenav-btn-bar-2"></div>
+      <div class="sidenav-btn-bar-3"></div>
+    </div>
+    <nav>
+      {% include nav-links.html %}
+    </nav>
     <main>
       {{content}}
     </main>
@@ -49,6 +51,9 @@
   <p>&copy; Hashes_JMI</p>
   <p>Build <span class="love">❤</span> by <a href="https://github.com/hashes-jmi">Team Hashes</a></p>
 </footer>
+<script type="text/javascript" src="{{site.baseurl}}/assets/js/sidenav.js">
+
+</script>
     {% if page.js %}
       {% for js in page.js %}
         <script type="text/javascript" src="{{site.baseurl}}/assets/js/{{js}}.js"></script>
