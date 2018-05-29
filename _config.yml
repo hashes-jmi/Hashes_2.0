@@ -9,3 +9,5 @@ sass:
 plugins:
     - jekyll-minifier
     - jekyll-last-modified-at
+google_analytics:
+  id: ""
