@@ -40,9 +40,8 @@ nav li{
 }
 
 nav a{
-  padding-left: 30px;
   font-weight: 500;
-  padding-left: 0px;
+  padding-left: 0;
   height: 50px;
   line-height: 50px;
   width: 100%;
@@ -139,7 +138,7 @@ nav .icon{
     height: 5px;
     background-color: $navbtn-rect;
     margin: 5px 0;
-    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
     transition: 0.4s ease-in-out;
   }
 
