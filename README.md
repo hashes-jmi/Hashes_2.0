@@ -1,115 +1,74 @@
 # Hashes_2.0
-The new cooler website of HashesJMI. open sourced.
 
-The HashesJMI website will come in a new avatar you all are encouraged to contribute.
-Fork this repo run on your local machine.
-Keep an eye on open issues, report bugs and contribute!
+https://hashes-jmi.github.io
 
-# Jekyll
-Jekyll is a simple, blog-aware, static site generator.
+## Running on local Machine
+- install ruby:  
+  `sudo apt-get install ruby ruby-dev build-essensital` ( for **linux** )  
+  https://rubyinstaller.org/ ( for **windows** )  
+  `brew install ruby` ( for **mac** )  
 
-You create your content as text files (Markdown), and organize them into folders. Then, you build the shell of your site using Liquid-enhanced HTML templates. Jekyll automatically stitches the content and templates together, generating a website made entirely of static assets, suitable for uploading to any server.
+  still have trouble see this https://www.ruby-lang.org/en/documentation/installation/
 
-Jekyll happens to be the engine behind GitHub Pages, so you can host your project’s Jekyll page/blog/website on GitHub’s servers for free.
+- install jekyll: `gem install jekyll bundler`
+- start server `jekyll serve --watch`
 
-## Read contributing.md to learn how to contribute
-To learn about pull requests and squashing commits read this.
-https://www.atlassian.com/blog/git/written-unwritten-guide-pull-requests
-
-# prerequisites
----------------------------------------------------
-
-## Install Ruby
- `sudo apt-get install ruby ruby-dev build-essensital` for linux.
-## Install Jekyll
- `gem install jekyll bundler`
-## Running on your local Machine
- Colne The Repo
-
- Cd into the Repo
-
- run `bundle exec jekyll serve`
-
- visit localhost:4000
-
- -----------------------------------------------------
-
-## Deployment
-
-https://oreanroy.github.io/Hashes_2.0/
-
-## How to publish Blogs
-- make a directory in `blog` folder of your name (say: `john-doe`)
-- add `index.md`
-- add a blog (say: `blog-something.md`)
-
-##options: blog.md
-After adding the options you can write your blog in markdown format.
 ```
-layout: blog #not to be changed
-title: Tile of the Blog
-category: WEB Development #or your category
-description: A long description 250-270 recommended
-
-author: Your Name #case sensitive.
-
-# optinal
-twitter: your_twitter_username
-instagram:
-facebook:
-github:
-linkedin:
-website: #you website url if any
+brew install ruby
+gem install jekyll bundler
+git clone https://github.com/hashes-jmi/Hashes_2.0.git
+cd Hashes_2.0
+jekyll serve --watch
 ```
+**open `http://127.0.0.1:4000`**
 
-### Options: index.md
-```
----
-layout: blog-index #not to be changed
-title: Blogs by John doe
+still have trouble see this https://help.github.com/articles/setting-up-your-github-pages-site-locally-with-jekyll/
 
-author: John Doe #case-sensitive
-nopublish: true
----
-```
-`index.md` will not contain any content. All four options are compulsory.
+## Writing blogs
 
-# Work Flow
-TO be added
---------------------------------------------------------
+- open `blog` folder
+- create a directory with name as your github username  ( say: `john-doe` )
+- create a `index.md` there and add:
+  ```
+  ---
+  layout: blog-index
 
-# color scheme
-- ![#ffffff](https://placehold.it/15/ffffff/000000?text=+) `#ffffff`
-- ![#7f0000](https://placehold.it/15/7f0000/000000?text=+) `#7f0000`
-- ![#1a222c](https://placehold.it/15/1a222c/000000?text=+) `#1a222c`
-- ![#555555](https://placehold.it/15/555555/000000?text=+) `#555555`
+  title:
+  username:
+  ---
+  ```
+- create your blog page ( say: `blog-something.md` )
+  ```
+  ---
+  layout: blog
 
------------------------------------------------------------
+  date: 2018-12-30
+  title:
+  category:
+  description: ""
 
-## To learm more about Git
-1. https://www.atlassian.com/git
-2. https://learngitbranching.js.org/
+  username:
+  ---
+  ```
 
-I personaly love this Git tutorial for beginers.
-https://try.github.io/levels/1/challenges/1
+  **username=github username**
 
-## To prevent merge conflicts always keep your local fork updated to upstream, before submitting pull requests.
-How read this https://stackoverflow.com/questions/7244321/how-do-i-update-a-github-forked-repository
+- finally add your details in root directory `_data/authors.yml` in the given format
+  ```
+  - name:
+    username:
+    about: ""
+    links:
+      github:
+      linkedin:
+      twitter:
+      instagram:
+      website:
+  ```
+- Add a pull request :)
 
-## To learn Git flavored Markdown.
-1. https://github.github.com/gfm/
-2. https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet
+**Congratulations you wrote a blog**
 
+### Contributions are always welcome
 
-
-## some JS animation and CSS tools/frameworks
-
-1. http://animejs.com/
-2. https://p5js.org/
-3. https://pqina.nl/filepond/#examples
-4. https://www.producthunt.com/posts/rellax-js
-5. https://dixonandmoe.com/rellax/
-6. http://substance.io/
-7. http://www.pixijs.com/tutorials
-8. https://jsfiddle.net/
-9. https://codepen.io/
+major Contributions: [@faisal-manzer](https://github.com/faisal-manzer), [@oreanroy](https://github.com/oreanroy)
