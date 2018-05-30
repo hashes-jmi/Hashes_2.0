@@ -3,12 +3,14 @@ layout: blog
 
 date: 2018-05-28
 title: S.E.O. Basics
-category: WEB Development
+category: ML
 description: "learn data seo"
 
-author: Faisal Manzer
-twitter: faisal_manzer
-facebook: i.am.faisal.manzer
+username: faisal-manzer
+name: Faisal Manzer
+links:
+  twitter: faisal_manzer
+  facebook: i.am.faisal.manzer
 ---
 # Search Engine Optimisation Guide
 

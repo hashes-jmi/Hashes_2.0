@@ -20,7 +20,7 @@ title: Projects | Hashes_JMI
         <li>{{project.lang}}</li>
       </ul>
       <p>{{project.description}}</p>
-      <a class="project-link" href="{{project.link}}">Check it out</a>
+      <a class="project-link" href="{{project.link}}" target="_blank">Check it out</a>
     </div>
   </div>
   {% if position=="right" %}

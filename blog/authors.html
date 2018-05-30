@@ -1,0 +1,26 @@
+---
+layout: default
+title: Blogs
+---
+<section id="projects">
+        <div class="user-details">
+  <h1>Our Authors</h1>
+</div>
+{% assign authors=(site.data.authors)%}
+{% for author in authors %}
+  {% assign blogs=(site.pages | where: "username", author.username)%}
+  {% assign blog-count=(blogs | size) %}
+  {% assign blog-categories=(blogs | map: "category" | join: "," | downcase | split:"," | uniq | camelcase | join: ', ') %}
+    <div class="user-projects">
+      <div class="contents-left" style="width: 100%;">
+        <h3 style="margin: 0"><a href="{{site.baseurl}}/blog/{{author.username}}/" style="text-decoration: none;color: inherit;">{{author.name}}</a></h3>
+        <p>
+          Total Blogs: {{blog-count}}<br />
+          Categories: {{blog-categories}}<br /><br />
+          {{author.about}}
+          {% include social-links.html links=author.links %}
+        </p>
+      </div>
+    </div>
+{% endfor %}
+</section>
