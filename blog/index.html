@@ -1,25 +1,19 @@
 ---
 layout: default
-
-title: Blogs
+title: Blogs - Hashes_JMI
 ---
 <section id="projects">
         <div class="user-details">
-  <h1>Recent Blogs</h1>
+  <h1>Recent Posts</h1>
 </div>
+<a href="{{site.baseurl}}/blog/authors/" style="text-decoration:none;color:black;">
+  <h3>
+    See all Authors
+  </h3>
+</a>
+<hr />
 {% assign blogs=(site.pages | where: "layout", "blog" | sort: 'date') %}
 {% for blog in blogs limit:20 %}
-  {% unless page.nopublish %}
-    <div class="user-projects">
-      <div class="contents-left" style="width: 100%;">
-        <h3 style="margin: 0"><a href="{{blog.url}}" style="text-decoration: none;color: inherit;">{{blog.title}}</a></h3>
-        by: {{blog.author}}<br />
-        on: {{blog.category}}
-        <p>
-          {{blog.description}}
-        </p>
-      </div>
-    </div>
-  {% endunless %}
+  {% include blog-details.html blog=blog %}
 {% endfor %}
 </section>

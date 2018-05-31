@@ -1,0 +1,21 @@
+{% assign social=include.links %}
+<div class="soical-icon-bar">
+{% if social.github %}
+  <a href="https://github.com/{{social.github}}" target="_blank"><i class="fab fa-github fa-2x"></i></a>
+{% endif %}
+{% if social.linkedin %}
+  <a href="https://linkedin.com/in/{{social.linkedin}}" target="_blank"><i class="fab fa-linkedin fa-2x"></i></a>
+{% endif %}
+{% if social.twitter %}
+  <a href="https://twitter.com/{{social.twitter}}" target="_blank"><i class="fab fa-twitter fa-2x"></i></a>
+{% endif %}
+{% if social.instagram %}
+  <a href="https://instagram.com/{{social.instagram}}" target="_blank"><i class="fab fa-instagram fa-2x"></i></a>
+{% endif %}
+{% if social.facebook %}
+  <a href="https://facebook.com/{{social.facebook}}" target="_blank"><i class="fab fa-facebook fa-2x"></i></a>
+{% endif %}
+{% if social.website %}
+  <a href="{{social.website}}" target="_blank"><i class="fas fa-link fa-2x"></i></a>
+{% endif %}
+</div>

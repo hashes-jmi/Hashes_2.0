@@ -12,7 +12,7 @@ title: Projects | Hashes_JMI
 {% for project in site.data.projects %}
   <div class="user-projects">
     <div class="images-{{position}}">
-      <img alt="hackJMI" src="{{page.baseurl}}/assets/images/projects/{{project.image}}" />
+      <img alt="hackJMI" src="{{site.baseurl}}/assets/images/projects/{{project.image}}" />
     </div>
     <div class="contents-{{positionc}}">
       <h3> {{project.title}} </h3>
@@ -20,7 +20,7 @@ title: Projects | Hashes_JMI
         <li>{{project.lang}}</li>
       </ul>
       <p>{{project.description}}</p>
-      <a class="project-link" href="{{project.link}}">Check it out</a>
+      <a class="project-link" href="{{project.link}}" target="_blank">Check it out</a>
     </div>
   </div>
   {% if position=="right" %}

@@ -3,21 +3,13 @@ layout: default
 ---
 <section id="projects">
         <div class="user-details">
-  <h1>Recent Blogs By: {{page.author}}</h1>
+  {% include author.html username=page.username %}
+  <h1>Recent Blogs By: {{author.name}}</h1>
 </div>
-{% assign blogs=(site.pages | where: "author", {{page.author}} | sort: 'date') %}
+{% assign blogs=(site.pages | where: "layout", "blog" | where: "username", {{page.username}} | sort: 'date') %}
 {% for blog in blogs limit:20 %}
   {% unless blog.nopublish %}
-    <div class="user-projects">
-      <div class="contents-left" style="width: 100%;">
-        <h3 style="margin: 0"><a href="{{blog.url}}" style="text-decoration: none;color: inherit;">{{blog.title}}</a></h3>
-        by: {{blog.author}}<br />
-        on: {{blog.category}}
-        <p>
-          {{blog.description}}
-        </p>
-      </div>
-    </div>
-    {% endunless %}
+    {% include blog-details.html blog=blog %}
+  {% endunless %}
 {% endfor %}
 </section>

@@ -1,0 +1,11 @@
+<div class="user-projects">
+  <div class="contents-left" style="width: 100%;">
+    <h3 style="margin: 0"><a href="{{include.blog.url}}" style="text-decoration: none;color: inherit;">{{include.blog.title}}</a></h3>
+    {% include author.html username=include.blog.username %}
+    by: <a href="{{site.baseurl}}/blog/{{include.blog.username}}/" style="text-decoration: none;color: black;">{{author.name}}</a><br />
+    on: {{include.blog.category}}
+    <p>
+      {{include.blog.description}}
+    </p>
+  </div>
+</div>

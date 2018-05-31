@@ -1,0 +1,5 @@
+{% for autho in site.data.authors %}
+  {% if autho.username==include.username %}
+    {% assign author=autho %}
+  {% endif %}
+{% endfor %}
