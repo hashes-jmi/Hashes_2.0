@@ -1,5 +1,5 @@
 markdown: kramdown
-baseurl: Hashes_2.0
+baseurl: ""
 exclude: ['README.md, JEKYLL.md']
 permalink: pretty
 timezone: Kolkata/Asia
