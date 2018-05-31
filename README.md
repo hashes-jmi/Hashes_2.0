@@ -1,6 +1,6 @@
 # Hashes_2.0
 
-https://hashes-jmi.github.io
+https://hashes-jmi.github.io/Hashes_2.0
 
 ## Running on local Machine
 - install ruby:  
