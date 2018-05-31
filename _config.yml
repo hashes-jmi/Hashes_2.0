@@ -1,5 +1,5 @@
 markdown: kramdown
-baseurl: ""
+baseurl: "https://hashes-jmi.github.io/Hashes_2.0"
 exclude: ['README.md, JEKYLL.md']
 permalink: pretty
 timezone: Kolkata/Asia
